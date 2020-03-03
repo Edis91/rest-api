@@ -5,8 +5,12 @@ GET http://localhost:4000/api/ninjas
 ###
 // POST
 POST http://localhost:4000/api/ninjas
-Content-Type: "application/json"
+Content-Type: application/json
 
+{
+    "rank":"Yellow Belt",
+    "available":true
+}
 
 ###
 
@@ -15,7 +19,8 @@ PUT http://localhost:4000/api/ninjas/1
 Content-Type: application/json
 
 {
-
+    "name":"Edis",
+    "rank":"Black Belt"
 }
 
 ###
@@ -24,8 +29,5 @@ Content-Type: application/json
 DELETE http://localhost:4000/api/ninjas/1
 Content-Type: application/json 
 
-{
-
-}
 
 ###
